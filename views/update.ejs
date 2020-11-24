@@ -1,0 +1,16 @@
+<%- include("partials/header"); -%>
+
+<h1>Update your book</h1>
+<form class="" action="/update/<%=bookId%>" method="post">
+  <div class="form-group">
+
+
+    <label for="bookTitle">Book Title: </label>
+    <input class="form-control" type="text" name="bookTitle" value="<%=bookTitle%>">
+    <label for="authorName">Author: </label>
+    <input class="form-control" type="text" name="authorName" value="<%=bookAuthor%>">
+    <label for="reviewBody">Review: </label>
+    <textarea class="form-control" name="reviewBody" rows="5" cols="30"><%=bookReview%></textarea>
+  </div>
+  <button class="btn btn-primary" type="submit" name="button">Update</button>
+</form>

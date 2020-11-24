@@ -1,0 +1,8 @@
+<%- include("partials/header"); -%>
+
+<h1><%= bookTitle %></h1>
+<h4><%= bookAuthor %></h4>
+<p><%= bookReview %></p>
+
+<a href="/update/<%=bookId%>" class="btn btn-primary">Update book</a>
+<a href="/delete/<%=bookId%>" class="btn btn-warning">Delete book</a>

@@ -1,0 +1,11 @@
+<%- include("partials/header"); -%>
+
+<h1>Delete book <%= bookTitle %>?</h1>
+
+<form class="" action="/delete/<%=bookId%>" method="post">
+  <div class="form-group">
+    <button type="submit" name="button" class="btn btn-danger">Yes</button>
+    <a href="/" class="btn btn-success">No</a>
+  </div>
+
+</form>

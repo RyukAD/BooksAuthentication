@@ -1,0 +1,15 @@
+<%- include("partials/header"); -%>
+<h1>Add your book</h1>
+<form class="" action="/create" method="post">
+  <div class="form-group">
+
+
+    <label for="bookTitle">Book Title: </label>
+    <input class="form-control" type="text" name="bookTitle" placeholder="Enter book title">
+    <label for="authorName">Author: </label>
+    <input class="form-control" type="text" name="authorName" placeholder="Enter author's name">
+    <label for="reviewBody">Review: </label>
+    <textarea class="form-control" name="reviewBody" rows="5" cols="30"></textarea>
+  </div>
+  <button class="btn btn-primary" type="submit" name="button">Add Book</button>
+</form>
