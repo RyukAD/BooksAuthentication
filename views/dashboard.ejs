@@ -1,11 +1,15 @@
 <%- include("partials/header"); -%>
 
 <p><% startingContent %></p>
-<a href="/create" class="btn btn-success">Create your book</a>
+<div class="add-books">
+  <a href="/create" class="btn btn-success">Add more books?</a>
+</div>
+
 <% books.forEach(function(book){ %>
   <h1><%= book.title %></h1>
-  <h3><%= book.author %></h3>
-  
-    <a href="books/<%=book._id%>">Read Full Review</a>
-  </p>
+  <h4><%= book.author %></h4>
+  <p><%= book.review.substring(0, 50)+"..." %><a href="books/<%=book._id%>">Read Full Review</a></p>
+
 <%})%>
+
+<%- include("partials/loggedInFooter"); %>
